@@ -1,0 +1,28 @@
+{
+  "name": "active-campaign",
+  "version": "1.0.0",
+  "description": "Library for help developers in working with active campaign CRM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PipaStanislav/active-campaign.git"
+  },
+  "keywords": [
+    "active-campaign",
+    "active",
+    "campaign",
+    "package"
+  ],
+  "author": "Pipa Stanislav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PipaStanislav/active-campaign/issues"
+  },
+  "homepage": "https://github.com/PipaStanislav/active-campaign#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
