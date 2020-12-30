@@ -85,8 +85,7 @@ class Contact {
   }
 
   listAll(query) {
-    if (!query) throw new Error('query is required');
-    if (typeof query !== 'object') throw new Error('Query must be an object');
+    if (!!query && typeof query !== 'object') throw new Error('Query must be an object');
 
     try {
       return axios.get(this.apiUrl, {
