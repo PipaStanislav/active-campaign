@@ -10,6 +10,7 @@ class Contact {
   }
 
   create(data) {
+    if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('Data must be an object');
 
     try {
@@ -22,6 +23,7 @@ class Contact {
   }
 
   createOrUpdate(data) {
+    if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('Data must be an object');
 
     try {
@@ -44,6 +46,7 @@ class Contact {
   }
 
   updateListStatus(data) {
+    if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('Data must be an object');
 
     try {
@@ -57,6 +60,7 @@ class Contact {
 
   update(id, data) {
     if (!id) throw new Error('id is required');
+    if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('Data must be an object');
 
     try {
@@ -81,6 +85,7 @@ class Contact {
   }
 
   listAll(query) {
+    if (!query) throw new Error('query is required');
     if (typeof query !== 'object') throw new Error('Query must be an object');
 
     try {
@@ -118,6 +123,7 @@ class Contact {
   }
 
   bulkImport(data) {
+    if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('Data must be an object');
 
     try {
