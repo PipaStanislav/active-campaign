@@ -14,7 +14,7 @@ class Contact {
 
     try {
       return axios.post(this.apiUrl, data, {
-        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.headers },
+        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.baseHeaders },
       });
     } catch (error) {
       throw new Error(`Error: ${error}`);
@@ -26,7 +26,7 @@ class Contact {
 
     try {
       return axios.post(`${this.baseApiUrl}/contact/sync`, data, {
-        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.headers },
+        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.baseHeaders },
       });
     } catch (error) {
       throw new Error(`Error: ${error}`);
@@ -37,7 +37,7 @@ class Contact {
     if (!id) throw new Error('id is required');
 
     try {
-      return axios.get(`${this.apiUrl}/${id}`, { headers: this.headers });
+      return axios.get(`${this.apiUrl}/${id}`, { headers: this.baseHeaders });
     } catch (error) {
       throw new Error(`Error: ${error}`);
     }
@@ -48,7 +48,7 @@ class Contact {
 
     try {
       return axios.post(`${this.baseApiUrl}/contactLists`, data, {
-        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.headers },
+        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.baseHeaders },
       });
     } catch (error) {
       throw new Error(`Error: ${error}`);
@@ -61,7 +61,7 @@ class Contact {
 
     try {
       return axios.put(`${this.apiUrl}/${id}`, data, {
-        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.headers },
+        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.baseHeaders },
       });
     } catch (error) {
       throw new Error(`Error: ${error}`);
@@ -73,7 +73,7 @@ class Contact {
 
     try {
       return axios.delete(`${this.apiUrl}/${id}`, {
-        headers: this.headers,
+        headers: this.baseHeaders,
       });
     } catch (error) {
       throw new Error(`Error: ${error}`);
@@ -85,7 +85,7 @@ class Contact {
 
     try {
       return axios.get(this.apiUrl, {
-        headers: { Accept: 'json', ...this.headers },
+        headers: { Accept: 'json', ...this.baseHeaders },
         params: query,
       });
     } catch (error) {
@@ -98,7 +98,7 @@ class Contact {
 
     try {
       return axios.get(`${this.apiUrl}/${id}/contactAutomations`, {
-        headers: { Accept: 'json', ...this.headers },
+        headers: { Accept: 'json', ...this.baseHeaders },
       });
     } catch (error) {
       throw new Error(`Error: ${error}`);
@@ -110,7 +110,7 @@ class Contact {
 
     try {
       return axios.get(`${this.apiUrl}/${id}/scoreValues`, {
-        headers: { Accept: 'json', ...this.headers },
+        headers: { Accept: 'json', ...this.baseHeaders },
       });
     } catch (error) {
       throw new Error(`Error: ${error}`);
@@ -122,7 +122,7 @@ class Contact {
 
     try {
       return axios.post(`${this.baseApiUrl}/import/bulk_import`, data, {
-        headers: { Accept: 'json', ...this.headers },
+        headers: { Accept: 'json', ...this.baseHeaders },
       });
     } catch (error) {
       throw new Error(`Error: ${error}`);
