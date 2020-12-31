@@ -1,6 +1,7 @@
 var Contact = require('./contact/contact');
 var Automation = require('./contact/automation');
 var CustomField = require('./contact/custom-field');
+var CustomFieldValues = require('./contact/custom-field-value');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -14,6 +15,10 @@ class ActiveCampaign {
       baseHeaders: this.baseHeaders,
     });
     this.customFields = new CustomField({
+      baseApiUrl: this.baseApiUrl,
+      baseHeaders: this.baseHeaders,
+    });
+    this.customFields = new CustomFieldValues({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
     });
