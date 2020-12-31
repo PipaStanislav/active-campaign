@@ -1,6 +1,6 @@
 var axios = require('axios');
 
-var { CONTENT_TYPE } = require('../common/constants/headers-constants');
+var { CONTENT_TYPE } = require('../common/constants/headers');
 
 class Contact {
   constructor({ baseApiUrl, baseHeaders }) {
@@ -11,7 +11,7 @@ class Contact {
 
   create(data) {
     if (!data) throw new Error('data is required');
-    if (typeof data !== 'object') throw new Error('Data must be an object');
+    if (typeof data !== 'object') throw new Error('data must be an object');
 
     try {
       return axios.post(this.apiUrl, data, {
@@ -24,7 +24,7 @@ class Contact {
 
   createOrUpdate(data) {
     if (!data) throw new Error('data is required');
-    if (typeof data !== 'object') throw new Error('Data must be an object');
+    if (typeof data !== 'object') throw new Error('data must be an object');
 
     try {
       return axios.post(`${this.baseApiUrl}/contact/sync`, data, {
@@ -39,7 +39,7 @@ class Contact {
     if (!id) throw new Error('id is required');
 
     try {
-      return axios.get(`${this.apiUrl}/${id}`, { headers: this.baseHeaders });
+      return axios.get(`${this.apiUrl}/${id}`, { Accept: 'json', headers: this.baseHeaders });
     } catch (error) {
       throw new Error(`Error: ${error}`);
     }
@@ -47,7 +47,7 @@ class Contact {
 
   updateListStatus(data) {
     if (!data) throw new Error('data is required');
-    if (typeof data !== 'object') throw new Error('Data must be an object');
+    if (typeof data !== 'object') throw new Error('data must be an object');
 
     try {
       return axios.post(`${this.baseApiUrl}/contactLists`, data, {
@@ -61,7 +61,7 @@ class Contact {
   update(id, data) {
     if (!id) throw new Error('id is required');
     if (!data) throw new Error('data is required');
-    if (typeof data !== 'object') throw new Error('Data must be an object');
+    if (typeof data !== 'object') throw new Error('data must be an object');
 
     try {
       return axios.put(`${this.apiUrl}/${id}`, data, {
@@ -123,7 +123,7 @@ class Contact {
 
   bulkImport(data) {
     if (!data) throw new Error('data is required');
-    if (typeof data !== 'object') throw new Error('Data must be an object');
+    if (typeof data !== 'object') throw new Error('data must be an object');
 
     try {
       return axios.post(`${this.baseApiUrl}/import/bulk_import`, data, {
