@@ -1,5 +1,6 @@
 var Contacts = require('./api/contacts');
 var Automations = require('./api/automations');
+var Brandings = require('./api/brandings');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -9,6 +10,10 @@ class ActiveCampaign {
     // API`s
     this.contacts = new Contacts({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.automations = new Automations({
+      baseApiUrl: this.baseApiUrl,
+      baseHeaders: this.baseHeaders,
+    });
+    this.brandings = new Brandings({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
     });
