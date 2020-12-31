@@ -2,7 +2,7 @@ var axios = require('axios');
 
 var { CONTENT_TYPE } = require('../../common/constants/headers');
 
-class Contact {
+class accountContactAssociation {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
@@ -72,4 +72,4 @@ class Contact {
   }
 }
 
-module.exports = Contact;
+module.exports = accountContactAssociation;
