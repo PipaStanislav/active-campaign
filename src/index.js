@@ -1,5 +1,5 @@
-var Contacts = require('./contacts');
-var Automations = require('./automations');
+var Contacts = require('./api/contacts');
+var Automations = require('./api/automations');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
