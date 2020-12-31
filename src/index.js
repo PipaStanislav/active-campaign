@@ -1,6 +1,8 @@
 var Contacts = require('./api/contacts');
 var Automations = require('./api/automations');
 var Brandings = require('./api/brandings');
+var Accounts = require('./api/accounts');
+var Addresses = require('./api/addresses');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -8,7 +10,8 @@ class ActiveCampaign {
     this.baseHeaders = { 'Api-Token': apiKey };
 
     // API`s
-    this.contacts = new Contacts({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.accounts = new Accounts({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.addresses = new Addresses({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.automations = new Automations({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
@@ -17,6 +20,7 @@ class ActiveCampaign {
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
     });
+    this.contacts = new Contacts({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
   }
 }
 
