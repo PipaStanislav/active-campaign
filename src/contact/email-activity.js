@@ -1,10 +1,10 @@
 var axios = require('axios');
 
-class EmailActivities {
+class EmailActivity {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
-    this.apiUrl = `${this.baseApiUrl}/fieldValues`;
+    this.apiUrl = `${this.baseApiUrl}/emailActivities`;
   }
 
   listAllEmailActivities(query) {
@@ -22,4 +22,4 @@ class EmailActivities {
   }
 }
 
-module.exports = EmailActivities;
+module.exports = EmailActivity;
