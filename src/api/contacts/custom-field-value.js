@@ -1,6 +1,6 @@
 var axios = require('axios');
 
-var { CONTENT_TYPE } = require('../common/constants/headers');
+var { CONTENT_TYPE } = require('../../common/constants/headers');
 
 class CustomFieldValues {
   constructor({ baseApiUrl, baseHeaders }) {
