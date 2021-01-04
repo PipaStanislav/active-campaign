@@ -4,9 +4,9 @@ var CustomAccountFields = require('./custom-account-fields');
 var CustomAccountFieldsValues = require('./custom-account-fields-values');
 
 class ActiveCampaign {
-  constructor({ apiUrl, apiKey }) {
-    this.baseApiUrl = `${apiUrl}/api/3`;
-    this.baseHeaders = { 'Api-Token': apiKey };
+  constructor({ baseApiUrl, baseHeaders }) {
+    this.baseApiUrl = baseApiUrl;
+    this.baseHeaders = baseHeaders;
 
     // API`s
     this.account = new Account({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
