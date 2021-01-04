@@ -24,11 +24,11 @@ I will try to be communicable.
 | CALENDAR FEEDS             |   &check;   | &cross; | &cross; |
 | CAMPAIGNS                  |   &check;   | &cross; | &cross; |
 | CONTACTS                   |   &check;   | &check; | &cross; |
-| DEALS                      |   &cross;   | &cross; | &cross; |
-| DEEPDATA INTEGRATIONS      |   &cross;   | &cross; | &cross; |
-| FORMS                      |   &cross;   | &cross; | &cross; |
-| LISTS                      |   &cross;   | &cross; | &cross; |
-| NOTES                      |   &cross;   | &cross; | &cross; |
+| DEALS                      |   &check;   | &cross; | &cross; |
+| DEEPDATA INTEGRATIONS      |   &check;   | &cross; | &cross; |
+| FORMS                      |   &check;   | &cross; | &cross; |
+| LISTS                      |   &check;   | &cross; | &cross; |
+| NOTES                      |   &check;   | &cross; | &cross; |
 | ORGANIZATIONS (DEPRECATED) |   &cross;   | &cross; | &cross; |
 | SAVED RESPONSES            |   &cross;   | &cross; | &cross; |
 | SCORES                     |   &cross;   | &cross; | &cross; |
