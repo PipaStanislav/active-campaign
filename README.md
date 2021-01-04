@@ -29,9 +29,10 @@ I will try to be communicable.
 | FORMS                      |   &check;   | &cross; | &cross; |
 | LISTS                      |   &check;   | &cross; | &cross; |
 | NOTES                      |   &check;   | &cross; | &cross; |
-| ORGANIZATIONS (DEPRECATED) |   &cross;   | &cross; | &cross; |
+| ORGANIZATIONS (DEPRECATED) |   &check;   | &cross; | &cross; |
 | SAVED RESPONSES            |   &cross;   | &cross; | &cross; |
 | SCORES                     |   &cross;   | &cross; | &cross; |
+| SEGMENTS                   |   &cross;   | &cross; | &cross; |
 | SEGMENTS                   |   &cross;   | &cross; | &cross; |
 | SETTINGS                   |   &cross;   | &cross; | &cross; |
 | SITE & EVENT TRACKING      |   &cross;   | &cross; | &cross; |
