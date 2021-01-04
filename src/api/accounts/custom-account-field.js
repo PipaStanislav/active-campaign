@@ -2,14 +2,14 @@ var axios = require('axios');
 
 var { CONTENT_TYPE } = require('../../common/constants/headers');
 
-class CustomDealField {
+class customAccountField {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
-    this.apiUrl = `${this.baseApiUrl}/dealCustomFieldMeta`;
+    this.apiUrl = `${this.baseApiUrl}/accountCustomFieldMeta`;
   }
 
-  create(data) {
+  createCustomField(data) {
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
 
@@ -22,7 +22,7 @@ class CustomDealField {
     }
   }
 
-  retrieve(id) {
+  retrieveCustomField(id) {
     if (!id) throw new Error('id is required');
 
     try {
@@ -32,7 +32,7 @@ class CustomDealField {
     }
   }
 
-  update(id, data) {
+  updateCustomField(id, data) {
     if (!id) throw new Error('id is required');
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
@@ -46,7 +46,7 @@ class CustomDealField {
     }
   }
 
-  delete(id) {
+  deleteCustomField(id) {
     if (!id) throw new Error('id is required');
 
     try {
@@ -58,7 +58,7 @@ class CustomDealField {
     }
   }
 
-  listAll(query) {
+  listAllCustomField(query) {
     if (!!query && typeof query !== 'object') throw new Error('Query must be an object');
 
     try {
@@ -72,4 +72,4 @@ class CustomDealField {
   }
 }
 
-module.exports = CustomDealField;
+module.exports = customAccountField;

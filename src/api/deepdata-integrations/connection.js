@@ -2,11 +2,11 @@ var axios = require('axios');
 
 var { CONTENT_TYPE } = require('../../common/constants/headers');
 
-class CustomDealField {
+class Connection {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
-    this.apiUrl = `${this.baseApiUrl}/dealCustomFieldMeta`;
+    this.apiUrl = `${this.baseApiUrl}/connections`;
   }
 
   create(data) {
@@ -72,4 +72,4 @@ class CustomDealField {
   }
 }
 
-module.exports = CustomDealField;
+module.exports = Connection;

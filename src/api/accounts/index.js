@@ -1,9 +1,9 @@
 var Account = require('./account');
 var AccountContactAssociation = require('./account-contact-association');
-var CustomAccountFields = require('./custom-account-fields');
-var CustomAccountFieldsValues = require('./custom-account-fields-values');
+var CustomAccountField = require('./custom-account-field');
+var CustomAccountFieldValue = require('./custom-account-field-value');
 
-class ActiveCampaign {
+class Accounts {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseApiUrl = baseApiUrl;
     this.baseHeaders = baseHeaders;
@@ -14,11 +14,11 @@ class ActiveCampaign {
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
     });
-    this.customAccountFields = new CustomAccountFields({
+    this.customAccountField = new CustomAccountField({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
     });
-    this.customAccountFieldsValues = new CustomAccountFieldsValues({
+    this.customAccountFieldsValue = new CustomAccountFieldValue({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
     });
@@ -30,4 +30,4 @@ class ActiveCampaign {
  * @public
  */
 
-module.exports = ActiveCampaign;
+module.exports = Accounts;

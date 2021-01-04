@@ -6,7 +6,7 @@ class Campaigns {
     this.baseApiUrl = baseApiUrl;
     this.baseHeaders = baseHeaders;
 
-    // Contacts API`s
+    // API`s
     this.campaign = new Campaign({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.message = new Message({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
   }

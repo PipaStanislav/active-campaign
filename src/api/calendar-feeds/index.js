@@ -5,7 +5,7 @@ class CalendarFeeds {
     this.baseApiUrl = baseApiUrl;
     this.baseHeaders = baseHeaders;
 
-    // Contacts API`s
+    // API`s
     this.calendarFeed = new CalendarFeed({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,

@@ -5,7 +5,7 @@ class Brandings {
     this.baseApiUrl = baseApiUrl;
     this.baseHeaders = baseHeaders;
 
-    // Automations API`s
+    // API`s
     this.branding = new Branding({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,

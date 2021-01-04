@@ -2,14 +2,14 @@ var axios = require('axios');
 
 var { CONTENT_TYPE } = require('../../common/constants/headers');
 
-class customAccountFields {
+class ECommerceOrder {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
-    this.apiUrl = `${this.baseApiUrl}/accountCustomFieldMeta`;
+    this.apiUrl = `${this.baseApiUrl}/ecomOrders`;
   }
 
-  createCustomField(data) {
+  create(data) {
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
 
@@ -22,7 +22,7 @@ class customAccountFields {
     }
   }
 
-  retrieveCustomField(id) {
+  retrieve(id) {
     if (!id) throw new Error('id is required');
 
     try {
@@ -32,7 +32,7 @@ class customAccountFields {
     }
   }
 
-  updateCustomField(id, data) {
+  update(id, data) {
     if (!id) throw new Error('id is required');
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
@@ -46,7 +46,7 @@ class customAccountFields {
     }
   }
 
-  deleteCustomField(id) {
+  delete(id) {
     if (!id) throw new Error('id is required');
 
     try {
@@ -58,7 +58,7 @@ class customAccountFields {
     }
   }
 
-  listAllCustomField(query) {
+  listAll(query) {
     if (!!query && typeof query !== 'object') throw new Error('Query must be an object');
 
     try {
@@ -72,4 +72,4 @@ class customAccountFields {
   }
 }
 
-module.exports = customAccountFields;
+module.exports = ECommerceOrder;

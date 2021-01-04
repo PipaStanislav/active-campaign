@@ -5,7 +5,7 @@ class Automations {
     this.baseApiUrl = baseApiUrl;
     this.baseHeaders = baseHeaders;
 
-    // Automations API`s
+    // API`s
     this.automation = new Automation({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,

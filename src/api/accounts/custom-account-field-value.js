@@ -2,7 +2,7 @@ var axios = require('axios');
 
 var { CONTENT_TYPE } = require('../../common/constants/headers');
 
-class customAccountFieldsValues {
+class customAccountFieldValue {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
@@ -98,4 +98,4 @@ class customAccountFieldsValues {
   }
 }
 
-module.exports = customAccountFieldsValues;
+module.exports = customAccountFieldValue;
