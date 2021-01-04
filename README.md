@@ -31,7 +31,7 @@ I will try to be communicable.
 | NOTES                      |   &check;   | &cross; | &cross; |
 | ORGANIZATIONS (DEPRECATED) |   &check;   | &cross; | &cross; |
 | SAVED RESPONSES            |   &check;   | &cross; | &cross; |
-| SCORES                     |   &cross;   | &cross; | &cross; |
+| SCORES                     |   &check;   | &cross; | &cross; |
 | SEGMENTS                   |   &cross;   | &cross; | &cross; |
 | SEGMENTS                   |   &cross;   | &cross; | &cross; |
 | SETTINGS                   |   &cross;   | &cross; | &cross; |
