@@ -8,6 +8,7 @@ var Contacts = require('./api/contacts');
 var Deals = require('./api/deals');
 var DeepdataIntegrations = require('./api/deepdata-integrations');
 var Forms = require('./api/forms');
+var Lists = require('./api/lists');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -37,6 +38,7 @@ class ActiveCampaign {
       baseHeaders: this.baseHeaders,
     });
     this.forms = new Forms({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.lists = new Lists({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
   }
 }
 
