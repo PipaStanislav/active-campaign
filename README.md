@@ -33,8 +33,7 @@ I will try to be communicable.
 | SAVED RESPONSES            |   &check;   | &cross; | &cross; |
 | SCORES                     |   &check;   | &cross; | &cross; |
 | SEGMENTS                   |   &check;   | &cross; | &cross; |
-| SEGMENTS                   |   &cross;   | &cross; | &cross; |
-| SETTINGS                   |   &cross;   | &cross; | &cross; |
+| SETTINGS                   |   &check;   | &cross; | &cross; |
 | SITE & EVENT TRACKING      |   &cross;   | &cross; | &cross; |
 | TAGS                       |   &cross;   | &cross; | &cross; |
 | TASKS                      |   &cross;   | &cross; | &cross; |
