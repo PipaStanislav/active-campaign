@@ -30,7 +30,7 @@ I will try to be communicable.
 | LISTS                      |   &check;   | &cross; | &cross; |
 | NOTES                      |   &check;   | &cross; | &cross; |
 | ORGANIZATIONS (DEPRECATED) |   &check;   | &cross; | &cross; |
-| SAVED RESPONSES            |   &cross;   | &cross; | &cross; |
+| SAVED RESPONSES            |   &check;   | &cross; | &cross; |
 | SCORES                     |   &cross;   | &cross; | &cross; |
 | SEGMENTS                   |   &cross;   | &cross; | &cross; |
 | SEGMENTS                   |   &cross;   | &cross; | &cross; |

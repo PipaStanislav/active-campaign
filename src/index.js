@@ -11,6 +11,7 @@ var Forms = require('./api/forms');
 var Lists = require('./api/lists');
 var Notes = require('./api/notes');
 var Organizations = require('./api/organizations');
+var SavedResponses = require('./api/saved-responses');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -43,6 +44,10 @@ class ActiveCampaign {
     this.lists = new Lists({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.notes = new Notes({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.organizations = new Organizations({
+      baseApiUrl: this.baseApiUrl,
+      baseHeaders: this.baseHeaders,
+    });
+    this.savedResponses = new SavedResponses({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
     });
