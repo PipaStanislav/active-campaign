@@ -2,7 +2,7 @@ var axios = require('axios');
 
 var { CONTENT_TYPE } = require('../../common/constants/headers');
 
-class Campaign {
+class Message {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
@@ -72,4 +72,4 @@ class Campaign {
   }
 }
 
-module.exports = Campaign;
+module.exports = Message;

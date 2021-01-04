@@ -5,6 +5,8 @@ var Brandings = require('./api/brandings');
 var CalendarFeed = require('./api/calendar-feeds');
 var Campaign = require('./api/campaigns');
 var Contacts = require('./api/contacts');
+var Deals = require('./api/deals');
+var DeepdataIntegrations = require('./api/deepdata-integrations');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -28,6 +30,8 @@ class ActiveCampaign {
     });
     this.campaign = new Campaign({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.contacts = new Contacts({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.deals = new Deals({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.deepdataIntegrations = new DeepdataIntegrations({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
   }
 }
 

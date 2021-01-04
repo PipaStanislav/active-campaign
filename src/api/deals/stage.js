@@ -2,7 +2,7 @@ var axios = require('axios');
 
 var { CONTENT_TYPE } = require('../../common/constants/headers');
 
-class Deal {
+class Stage {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
@@ -86,4 +86,4 @@ class Deal {
   }
 }
 
-module.exports = Deal;
+module.exports = Stage;

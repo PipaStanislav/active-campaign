@@ -1,6 +1,6 @@
 var Address = require('./address');
 
-class ActiveCampaign {
+class Addresses {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseApiUrl = baseApiUrl;
     this.baseHeaders = baseHeaders;
@@ -15,4 +15,4 @@ class ActiveCampaign {
  * @public
  */
 
-module.exports = ActiveCampaign;
+module.exports = Addresses;

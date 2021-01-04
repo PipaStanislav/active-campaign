@@ -2,14 +2,14 @@ var axios = require('axios');
 
 var { CONTENT_TYPE } = require('../../common/constants/headers');
 
-class customAccountFieldsValues {
+class customAccountField {
   constructor({ baseApiUrl, baseHeaders }) {
     this.baseHeaders = baseHeaders;
     this.baseApiUrl = baseApiUrl;
-    this.apiUrl = `${this.baseApiUrl}/accountCustomFieldData`;
+    this.apiUrl = `${this.baseApiUrl}/accountCustomFieldMeta`;
   }
 
-  createCustomFieldValue(data) {
+  createCustomField(data) {
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
 
@@ -22,20 +22,7 @@ class customAccountFieldsValues {
     }
   }
 
-  bulkCreateCustomFieldValue(data) {
-    if (!data) throw new Error('data is required');
-    if (typeof data !== 'object') throw new Error('data must be an object');
-
-    try {
-      return axios.post(`${this.apiUrl}/bulkCreate`, data, {
-        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.baseHeaders },
-      });
-    } catch (error) {
-      throw new Error(`Error: ${error}`);
-    }
-  }
-
-  retrieveCustomFieldValue(id) {
+  retrieveCustomField(id) {
     if (!id) throw new Error('id is required');
 
     try {
@@ -45,7 +32,7 @@ class customAccountFieldsValues {
     }
   }
 
-  updateCustomFieldValue(id, data) {
+  updateCustomField(id, data) {
     if (!id) throw new Error('id is required');
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
@@ -59,7 +46,7 @@ class customAccountFieldsValues {
     }
   }
 
-  deleteCustomFieldValue(id) {
+  deleteCustomField(id) {
     if (!id) throw new Error('id is required');
 
     try {
@@ -71,7 +58,7 @@ class customAccountFieldsValues {
     }
   }
 
-  listAllCustomFieldValue(query) {
+  listAllCustomField(query) {
     if (!!query && typeof query !== 'object') throw new Error('Query must be an object');
 
     try {
@@ -83,19 +70,6 @@ class customAccountFieldsValues {
       throw new Error(`Error: ${error}`);
     }
   }
-
-  bulkUpdateCustomFieldValue(data) {
-    if (!data) throw new Error('data is required');
-    if (typeof data !== 'object') throw new Error('data must be an object');
-
-    try {
-      return axios.patch(`${this.apiUrl}/bulkUpdate`, data, {
-        headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.baseHeaders },
-      });
-    } catch (error) {
-      throw new Error(`Error: ${error}`);
-    }
-  }
 }
 
-module.exports = customAccountFieldsValues;
+module.exports = customAccountField;
