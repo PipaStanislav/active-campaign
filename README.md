@@ -32,7 +32,7 @@ I will try to be communicable.
 | ORGANIZATIONS (DEPRECATED) |   &check;   | &cross; | &cross; |
 | SAVED RESPONSES            |   &check;   | &cross; | &cross; |
 | SCORES                     |   &check;   | &cross; | &cross; |
-| SEGMENTS                   |   &cross;   | &cross; | &cross; |
+| SEGMENTS                   |   &check;   | &cross; | &cross; |
 | SEGMENTS                   |   &cross;   | &cross; | &cross; |
 | SETTINGS                   |   &cross;   | &cross; | &cross; |
 | SITE & EVENT TRACKING      |   &cross;   | &cross; | &cross; |
