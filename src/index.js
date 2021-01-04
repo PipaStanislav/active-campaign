@@ -2,6 +2,7 @@ var Accounts = require('./api/accounts');
 var Addresses = require('./api/addresses');
 var Automations = require('./api/automations');
 var Brandings = require('./api/brandings');
+var CalendarFeed = require('./api/calendar-feeds');
 var Campaign = require('./api/campaigns');
 var Contacts = require('./api/contacts');
 
@@ -18,6 +19,10 @@ class ActiveCampaign {
       baseHeaders: this.baseHeaders,
     });
     this.brandings = new Brandings({
+      baseApiUrl: this.baseApiUrl,
+      baseHeaders: this.baseHeaders,
+    });
+    this.calendarFeed = new CalendarFeed({
       baseApiUrl: this.baseApiUrl,
       baseHeaders: this.baseHeaders,
     });
