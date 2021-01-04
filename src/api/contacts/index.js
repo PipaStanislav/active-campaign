@@ -4,9 +4,9 @@ var CustomField = require('./custom-field');
 var CustomFieldValues = require('./custom-field-value');
 
 class Contacts {
-  constructor({ apiUrl, apiKey }) {
-    this.baseApiUrl = `${apiUrl}/api/3`;
-    this.baseHeaders = { 'Api-Token': apiKey };
+  constructor({ baseApiUrl, baseHeaders }) {
+    this.baseApiUrl = baseApiUrl;
+    this.baseHeaders = baseHeaders;
 
     // Contacts API`s
     this.contact = new Contact({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });

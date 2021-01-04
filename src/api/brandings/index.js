@@ -1,9 +1,9 @@
 var Branding = require('./branding');
 
 class Brandings {
-  constructor({ apiUrl, apiKey }) {
-    this.baseApiUrl = `${apiUrl}/api/3`;
-    this.baseHeaders = { 'Api-Token': apiKey };
+  constructor({ baseApiUrl, baseHeaders }) {
+    this.baseApiUrl = baseApiUrl;
+    this.baseHeaders = baseHeaders;
 
     // Automations API`s
     this.branding = new Branding({
