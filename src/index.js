@@ -31,7 +31,10 @@ class ActiveCampaign {
     this.campaign = new Campaign({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.contacts = new Contacts({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.deals = new Deals({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
-    this.deepdataIntegrations = new DeepdataIntegrations({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.deepdataIntegrations = new DeepdataIntegrations({
+      baseApiUrl: this.baseApiUrl,
+      baseHeaders: this.baseHeaders,
+    });
   }
 }
 
