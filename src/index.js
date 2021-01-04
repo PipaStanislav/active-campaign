@@ -10,6 +10,7 @@ var DeepdataIntegrations = require('./api/deepdata-integrations');
 var Forms = require('./api/forms');
 var Lists = require('./api/lists');
 var Notes = require('./api/notes');
+var Organizations = require('./api/organizations');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -41,6 +42,10 @@ class ActiveCampaign {
     this.forms = new Forms({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.lists = new Lists({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.notes = new Notes({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.organizations = new Organizations({
+      baseApiUrl: this.baseApiUrl,
+      baseHeaders: this.baseHeaders,
+    });
   }
 }
 
