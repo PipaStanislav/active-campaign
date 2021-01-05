@@ -18,6 +18,7 @@ var Settings = require('./api/settings');
 var SiteEventTracking = require('./api/site-event-tracking');
 var Tags = require('./api/tags');
 var Tasks = require('./api/tasks');
+var TaskTypes = require('./api/task-types');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -66,6 +67,7 @@ class ActiveCampaign {
     });
     this.tags = new Tags({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.tasks = new Tasks({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.taskTypes = new TaskTypes({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
   }
 }
 

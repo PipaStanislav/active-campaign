@@ -37,7 +37,7 @@ I will try to be communicable.
 | SITE & EVENT TRACKING      |   &check;   | &cross; | &cross; |
 | TAGS                       |   &check;   | &cross; | &cross; |
 | TASKS                      |   &check;   | &cross; | &cross; |
-| TASK TYPES                 |   &cross;   | &cross; | &cross; |
+| TASK TYPES                 |   &check;   | &cross; | &cross; |
 | TEMPLATES                  |   &cross;   | &cross; | &cross; |
 | USERS                      |   &cross;   | &cross; | &cross; |
 | WEBHOOKS                   |   &cross;   | &cross; | &cross; |
