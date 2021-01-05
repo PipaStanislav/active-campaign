@@ -40,7 +40,7 @@ I will try to be communicable.
 | TASK TYPES                 |   &check;   | &cross; | &cross; |
 | TEMPLATES                  |   &check;   | &cross; | &cross; |
 | USERS                      |   &check;   | &cross; | &cross; |
-| WEBHOOKS                   |   &cross;   | &cross; | &cross; |
+| WEBHOOKS                   |   &check;   | &cross; | &cross; |
 
 #### &check; - it is implemented, and you can use these functions from a package. 
 #### &cross; - functionality will add in close time.  
