@@ -21,6 +21,7 @@ var Tasks = require('./api/tasks');
 var TaskTypes = require('./api/task-types');
 var Templates = require('./api/templates');
 var Users = require('./api/users');
+var Webhooks = require('./api/webhooks');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -72,6 +73,7 @@ class ActiveCampaign {
     this.taskTypes = new TaskTypes({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.templates = new Templates({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.users = new Users({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.webhooks = new Webhooks({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
   }
 }
 
