@@ -15,6 +15,7 @@ var SavedResponses = require('./api/saved-responses');
 var Scores = require('./api/scores');
 var Segments = require('./api/segments');
 var Settings = require('./api/settings');
+var SiteEventTrecking = require('./api/site-event-tracking');
 
 class ActiveCampaign {
   constructor({ apiUrl, apiKey }) {
@@ -57,6 +58,10 @@ class ActiveCampaign {
     this.scores = new Scores({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.segments = new Segments({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
     this.settings = new Settings({ baseApiUrl: this.baseApiUrl, baseHeaders: this.baseHeaders });
+    this.siteEventTrecking = new SiteEventTrecking({
+      baseApiUrl: this.baseApiUrl,
+      baseHeaders: this.baseHeaders,
+    });
   }
 }
 
