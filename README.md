@@ -35,7 +35,7 @@ I will try to be communicable.
 | SEGMENTS                   |   &check;   | &cross; | &cross; |
 | SETTINGS                   |   &check;   | &cross; | &cross; |
 | SITE & EVENT TRACKING      |   &check;   | &cross; | &cross; |
-| TAGS                       |   &cross;   | &cross; | &cross; |
+| TAGS                       |   &check;   | &cross; | &cross; |
 | TASKS                      |   &cross;   | &cross; | &cross; |
 | TASK TYPES                 |   &cross;   | &cross; | &cross; |
 | TEMPLATES                  |   &cross;   | &cross; | &cross; |
