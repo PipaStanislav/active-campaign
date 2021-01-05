@@ -39,7 +39,7 @@ I will try to be communicable.
 | TASKS                      |   &check;   | &cross; | &cross; |
 | TASK TYPES                 |   &check;   | &cross; | &cross; |
 | TEMPLATES                  |   &check;   | &cross; | &cross; |
-| USERS                      |   &cross;   | &cross; | &cross; |
+| USERS                      |   &check;   | &cross; | &cross; |
 | WEBHOOKS                   |   &cross;   | &cross; | &cross; |
 
 #### &check; - it is implemented, and you can use these functions from a package. 
