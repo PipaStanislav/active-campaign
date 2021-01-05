@@ -38,7 +38,7 @@ I will try to be communicable.
 | TAGS                       |   &check;   | &cross; | &cross; |
 | TASKS                      |   &check;   | &cross; | &cross; |
 | TASK TYPES                 |   &check;   | &cross; | &cross; |
-| TEMPLATES                  |   &cross;   | &cross; | &cross; |
+| TEMPLATES                  |   &check;   | &cross; | &cross; |
 | USERS                      |   &cross;   | &cross; | &cross; |
 | WEBHOOKS                   |   &cross;   | &cross; | &cross; |
 
