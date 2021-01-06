@@ -59,7 +59,7 @@ class CustomField {
     }
   }
 
-  listAlls(query) {
+  listAll(query) {
     if (!!query && typeof query !== 'object') throw new Error('Query must be an object');
 
     try {
