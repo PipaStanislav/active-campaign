@@ -91,7 +91,7 @@ class CustomField {
     if (typeof data !== 'object') throw new Error('data must be an object');
 
     try {
-      return axios.post(this.apiUrl, data, {
+      return axios.post(`${this.baseApiUrl}/fieldOption/bulk`, data, {
         headers: { 'Content-Type': CONTENT_TYPE.APPLICATION_JSON, ...this.baseHeaders },
       });
     } catch (error) {
