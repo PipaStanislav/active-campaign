@@ -9,7 +9,7 @@ class CustomField {
     this.apiUrl = `${this.baseApiUrl}/fields`;
   }
 
-  createCustomField(data) {
+  create(data) {
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
 
@@ -22,7 +22,7 @@ class CustomField {
     }
   }
 
-  retrieveCustomField(id) {
+  retrieve(id) {
     if (!id) throw new Error('id is required');
 
     try {
@@ -35,7 +35,7 @@ class CustomField {
     }
   }
 
-  updateCustomField(id, data) {
+  update(id, data) {
     if (!id) throw new Error('id is required');
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
@@ -49,17 +49,17 @@ class CustomField {
     }
   }
 
-  deleteCustomField(id) {
+  delete(id) {
     if (!id) throw new Error('id is required');
 
     try {
-      return axios.delete(`${this.baseApiUrl}/${id}`, { headers: this.baseHeaders });
+      return axios.delete(`${this.apiUrl}/${id}`, { headers: this.baseHeaders });
     } catch (error) {
       throw new Error(`Error: ${error}`);
     }
   }
 
-  listAllCustomFields(query) {
+  listAlls(query) {
     if (!!query && typeof query !== 'object') throw new Error('Query must be an object');
 
     try {
@@ -73,7 +73,7 @@ class CustomField {
     }
   }
 
-  createCustomFieldRelationshipToList(data) {
+  createRelationshipToList(data) {
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
 
@@ -86,7 +86,7 @@ class CustomField {
     }
   }
 
-  createCustomFieldOptions(data) {
+  createOptions(data) {
     if (!data) throw new Error('data is required');
     if (typeof data !== 'object') throw new Error('data must be an object');
 
