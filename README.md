@@ -112,6 +112,8 @@ Full list of methods you can see in the section **Available resources and method
 
 ## Available resources and methods
 
+Use official [Documentation](https://developers.activecampaign.com/reference#authentication) for create an object.
+
  - accounts
    * account
      - createAccount(object)
