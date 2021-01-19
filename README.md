@@ -1,10 +1,8 @@
 # Active campaign
-* * *
 
 This package I hope will help to work with `Active Campaign` API v3.
 
 ## Note
-* * *
 
 I created this package for my own use. \
 In my project, I used not all functionality which proposes `Active Campaign`. \
@@ -14,11 +12,12 @@ I will try to be communicable.
 
 
 ## List of features
-* * *
 
 | Versions of API            | Implemented |   QA    |  Tests  |
 | -------------------------- | ----------- | ------- | ------- |
 | V3                         |   &check;   | &cross; | &cross; |
+
+* * *
 
 | Functionality              | Implemented |   QA    |  Tests  |
 | -------------------------- | ----------- | ------- | ------- |
@@ -51,7 +50,6 @@ I will try to be communicable.
 #### &cross; - functionality will add in close time.  
 
 ## Installing
-* * *
 
 Using npm:
     
@@ -63,7 +61,6 @@ Using yarn:
     yarn add active-campaign
 
 ## Example
-* * *
 
 ### Configure client
 
@@ -71,7 +68,7 @@ Using yarn:
 const ActiveCampaign = require('active-campaign');
 
 const ACTIVE_CAMPAIGN_API_URL = https://your-company-name.api-us1.com // it is example
-const ACTIVE_CAMPAIGN_API_KEY = You can get this API_KEY from your active campaign account. Details [Documentation](https://developers.activecampaign.com/reference#authentication)
+const ACTIVE_CAMPAIGN_API_KEY = You can get this API_KEY from your active campaign account. Details https://developers.activecampaign.com/reference#authentication
 
 const ac = new ActiveCampaign({
   apiUrl: ACTIVE_CAMPAIGN_API_URL,
@@ -114,7 +111,6 @@ console.log(contact)
 Full list of methods you can see in the section **Available resources and methods**
 
 ## Available resources and methods
-***
 
  - accounts
    * account
