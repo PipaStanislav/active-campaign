@@ -1,6 +1,11 @@
 {
   "name": "active-campaign",
   "version": "1.0.0",
+  "author": {
+    "name" : "Pipa Stanislav",
+    "email" : "pipa.stanislav.work@gmail.com",
+    "url" : "https://github.com/PipaStanislav"
+  },
   "description": "Library for help developers in working with active campaign CRM",
   "main": "src/index.js",
   "scripts": {
@@ -32,7 +37,6 @@
     "campaign",
     "package"
   ],
-  "author": "Pipa Stanislav",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PipaStanislav/active-campaign/issues"
